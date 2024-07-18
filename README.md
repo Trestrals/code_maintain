@@ -1,1 +1,1 @@
-# code_maintain
+# (k,p)-core maintenance
