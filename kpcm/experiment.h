@@ -7,17 +7,9 @@ void correctness_test_local_insertion(std::string dataset);
 
 void correctness_test_local_deletion(std::string dataset);
 
-void correctness_test_global_insertion(std::string dataset);
-
-void correctness_test_global_deletion(std::string dataset);
-
 void runtime_test_local_insertion(std::string dataset);
 
 void runtime_test_local_deletion(std::string dataset);
-
-void runtime_test_global_insertion(std::string dataset);
-
-void runtime_test_global_deletion(std::string dataset);
 
 void runtime_test_local_woc_insertion(std::string dataset);
 
@@ -27,9 +19,6 @@ void vertices_statistics_local_insertion(std::string dataset);
 
 void vertices_statistics_local_deletion(std::string dataset);
 
-void vertices_statistics_global_insertion(std::string dataset);
-
-void vertices_statistics_global_deletion(std::string dataset);
 
 
 #endif // !EXPERIMENT_H

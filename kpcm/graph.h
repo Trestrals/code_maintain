@@ -62,8 +62,6 @@ public:
 	void remove_edge(vid_t u, vid_t v);
 	void loadGraph(std::string dir);
 	double kpcore_decom();
-	double global_insert_edge(vid_t u, vid_t v);
-	double global_delete_edge(vid_t u, vid_t v);
 	bool isEdge(vid_t u, vid_t v);
 	void generate_random_edge(std::string stream_location);
 	bool compare_kpcore(Graph* g);
@@ -96,7 +94,6 @@ public:
 	void local_insert_edge(vid_t u, vid_t v);
 	void local_insert_edge_woc(vid_t u, vid_t v);
 	std::vector<double> local_insert_edge_test(vid_t u, vid_t v);
-	long long global_insert_edge_vertex_statistics(vid_t u, vid_t v);
 
 	void local_delete_edge(vid_t u, vid_t v);
 	void local_delete_edge_woc(vid_t u, vid_t v);
@@ -111,7 +108,6 @@ public:
 	std::vector<long long> local_delete_edge_vertex_statistics(vid_t u, vid_t v);
 	std::vector<long long> local_delete_maintain_p_vertex_statistics(int k, vid_t u, vid_t v, int pre_k_u, int pre_k_v);
 	std::vector<long long> local_delete_maintain_p_for_changed_core_vertex_statistics(int k, vid_t u, vid_t v, int pre_k_u, int pre_k_v, std::vector<vid_t> changed_nodes);
-	long long global_delete_edge_vertex_statistics(vid_t u, vid_t v);
 	void print_k_order();
 
 	void pIncrease_woc(int k, int begin_rank);
